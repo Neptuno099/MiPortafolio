@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(45deg, #A20BDE, #5B0B99, #6E0CF7);
+    background-size: 400% 400%;
+    position: relative;
+    animation: animacionFondo 15s ease infinite;
+}
+
+.seccionPrincipal{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccionPrincipal h1{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 5rem;
+    color: azure;
+}
+
+.seccionPrincipal h2{
+    font-family: '04B30', 'Archivo Black', sans-serif;
+    font-size: 3.5rem;
+    color: #dd00ff;
+}
+
+.contenedorRedes{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contenedorRedes a img{
+    width: 25px;
+    height: 25px;
+}
+
+.contenedorRedes a img:hover{
+    scale: 1.1;
+}
+
+
+@keyframes animacionFondo{
+    0% {background-position: 0 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0 50%;}
+}
+
+@font-face {
+    font-family: '04B30';
+    src: url('./fuentes/04B_30__.TTF') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+
+/* Contenedor titulo */
+
+.contenedorTitulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorTitulo h2{
+    font-family: '04B30', 'Archivo Black', sans-serif;
+    font-size: 3.5rem;
+    color: #DE0AFF;
+}
+
+/* Seccion secundaria proyectos */
+.seccionSecundaria{
+    height: 100vh;
+    margin-top: 50px;
+}
+
+.proyectosCards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cards {
+    width: 350px;
+    height: 250px;
+    background: #fafafa10;
+    backdrop-filter: blur(0,4rem);
+    border: solid 1px #ddced1;
+    border-radius: 2%;
+    padding: 20px;
+}
+
+.proyectosCards .nivel{
+    font-family: 'Archivo Black';
+    font-weight: bold;
+    color: #DE0AFF;
+    font-size: 1.5rem; 
+    margin-bottom: 5px;
+    border-bottom: 1px solid #dd00ff;
+
+}
+
+.contenedorTitulo-Github{
+    display: flex;
+    justify-content: space-between;
+}
+
+.codigo img{
+    width: 25px;
+    height: 25px;
+    padding-top: 35px;
+    padding-right: 5px;
+}
+
+.codigo img:hover{
+    scale: 1.1;
+}
+
+.proyectosCards h1{
+    font-family: 'Archivo Black';
+    font-size: 1.5rem;
+    color: azure;
+    margin-top: 30px;
+}
+
+
+.proyectosCards .texto{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: azure;
+    margin-bottom: 20px;
+}
+
+/*  Contenedor herramientas */
+
+.contenedorHerramientas{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contenedorHerramientas .javascript{
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: rgb(245, 245, 31);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.contenedorHerramientas .html{
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: rgb(248, 13, 146);
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.contenedorHerramientas .css{
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: rgb(18, 216, 18);
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
